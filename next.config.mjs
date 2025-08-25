@@ -12,10 +12,7 @@ const nextConfig = {
   },
   output: 'export',
   trailingSlash: true,
-  skipTrailingSlashRedirect: true,
-
-  basePath: '/bmw-interview',
-  assetPrefix: '/bmw-interview/',
+  skipTrailingSlashRedirect: true
 
 }
 
