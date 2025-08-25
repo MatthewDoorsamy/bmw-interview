@@ -123,8 +123,7 @@ export default function BMWInterviewPortfolio() {
                 <Target className="w-10 h-10 text-white" />
               </div>
               <p className="text-2xl text-gray-700 italic leading-relaxed font-serif">
-                [Please provide your personal mission statement - what drives you, your core values, and your vision for
-                making an impact through technology and data science]
+                My personal mission is to not waste an ounce of my potential. I have seen many talented individuals let their abilities fade and fail to make something of themselves. That will never be me. I will become the best possible version of myself. Even if I were given a thousand more lifetimes, I would still want this one to be my best.
               </p>
               <div className="flex justify-center space-x-2">
                 {[...Array(5)].map((_, i) => (
@@ -141,28 +140,31 @@ export default function BMWInterviewPortfolio() {
       </section>
 
       {/* Goals Section */}
-      <section className="py-20 px-6 bg-gradient-to-r from-blue-900 via-blue-800 to-blue-900 text-white relative overflow-hidden">
-        <div className="absolute inset-0 bg-[url('/images/bmw-design-concept.jpeg')] opacity-5 bg-cover bg-center"></div>
-        <div className="max-w-4xl mx-auto relative z-10">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-6xl font-bold mb-6 font-serif text-white">Personal Goals & Objectives</h2>
-            <div className="w-32 h-2 bg-gradient-to-r from-red-500 via-white to-red-500 mx-auto rounded-full animate-pulse"></div>
+<section className="py-20 px-6 bg-gradient-to-r from-blue-900 via-blue-800 to-blue-900 text-white relative overflow-hidden">
+  <div className="absolute inset-0 bg-[url('/images/bmw-design-concept.jpeg')] opacity-5 bg-cover bg-center"></div>
+  <div className="max-w-4xl mx-auto relative z-10">
+    <div className="text-center mb-16">
+      <h2 className="text-4xl md:text-6xl font-bold mb-6 font-serif text-white">Personal Goals & Objectives</h2>
+      <div className="w-32 h-2 bg-gradient-to-r from-red-500 via-white to-red-500 mx-auto rounded-full animate-pulse"></div>
+    </div>
+    <Card className="p-10 border-0 bg-white/10 backdrop-blur-lg shadow-2xl hover:shadow-3xl transition-all duration-500 hover:scale-105">
+      <CardContent className="space-y-8">
+        <div className="flex justify-center mb-6">
+          <div className="w-20 h-20 bg-gradient-to-r from-red-600 to-red-500 rounded-full flex items-center justify-center animate-bounce">
+            <Rocket className="w-10 h-10 text-white" />
           </div>
-          <Card className="p-10 border-0 bg-white/10 backdrop-blur-lg shadow-2xl hover:shadow-3xl transition-all duration-500 hover:scale-105">
-            <CardContent className="space-y-8">
-              <div className="flex justify-center mb-6">
-                <div className="w-20 h-20 bg-gradient-to-r from-red-600 to-red-500 rounded-full flex items-center justify-center animate-bounce">
-                  <Rocket className="w-10 h-10 text-white" />
-                </div>
-              </div>
-              <p className="text-xl text-white leading-relaxed font-serif text-center">
-                [Please provide your personal goals and objectives - what you want to achieve personally and
-                professionally, your aspirations beyond the career timeline, and what success means to you]
-              </p>
-            </CardContent>
-          </Card>
         </div>
-      </section>
+        <div className="text-xl text-white leading-relaxed font-serif text-center space-y-4">
+          <div>I want to run at least one full marathon in my lifetime.</div>
+          <div>Owning a red Ferrari has always been a dream of mine since I was a kid. My first one is going to be a red Ferrari 458.</div>
+          <div>I want to be able to bench press 120kg.</div>
+          <div>Buy my mom her dream car when I can.</div>
+          <div>Retire my mom.</div>
+        </div>
+      </CardContent>
+    </Card>
+  </div>
+</section>
 
       {/* Skills Section (white background, fits theme) */}
       <section id="skills" className="py-20 px-6 bg-gradient-to-br from-white via-blue-50 to-red-50">
@@ -181,13 +183,13 @@ export default function BMWInterviewPortfolio() {
               </CardHeader>
               <CardContent className="space-y-3 text-lg text-blue-900">
                 <div>
-                  <span className="font-semibold text-blue-500">Programming:</span> JavaScript / TypeScript, Python, R, SQL, C#, SAS
+                  <span className="font-semibold text-blue-500">Programming Languages:</span> JavaScript / TypeScript, Java, R, SQL, C#, SAS, PostgreSQL
                 </div>
                 <div>
-                  <span className="font-semibold text-blue-500">Frameworks / Tools:</span> React, Next.js, .NET, PostgreSQL, Git, Agile/Scrum
+                  <span className="font-semibold text-blue-500">Frameworks / Tools:</span> React, Next.js, .NET, Git, Agile/Scrum, MVC, Angular, IONIC
                 </div>
                 <div>
-                  <span className="font-semibold text-blue-500">Data Science:</span> Statistical Modeling, Machine Learning, Data Visualization (Tableau, Power BI), Predictive Analytics, Database Design & Optimization, ETL Processes
+                  <span className="font-semibold text-blue-500">Data Science:</span> Statistical Modeling, Machine Learning, Data Visualization (R, SAS, Power BI), Predictive Analytics, Database Design & Optimization, ETL Processes, Time Series Analysis
                 </div>
               </CardContent>
             </Card>
@@ -204,7 +206,7 @@ export default function BMWInterviewPortfolio() {
                   <span className="font-semibold text-red-500">Problem Solving:</span> Analytical Thinking, Creative Problem-Solving, Rapid Learning & Adaptation, Attention to Detail
                 </div>
                 <div>
-                  <span className="font-semibold text-red-500">Attributes:</span> Self-Motivated & Driven, Resilient Under Pressure, Continuous Learning Mindset, Results-Oriented
+                  <span className="font-semibold text-red-500">Attributes:</span> Self-Motivated & Driven, Resilient Under Pressure, Continuous Learning Mindset, Process-Oriented
                 </div>
               </CardContent>
             </Card>
@@ -224,19 +226,21 @@ export default function BMWInterviewPortfolio() {
           </div>
           <div className="grid md:grid-cols-3 gap-8">
             <Card className="p-8 bg-white border-0 shadow-xl hover:shadow-3xl transition-all duration-500 hover:scale-110 hover:-translate-y-4 group">
-              <CardHeader>
-                <CardTitle className="flex items-center gap-3 text-blue-700 font-serif text-xl">
-                  <div className="w-12 h-12 bg-gradient-to-r from-blue-600 to-blue-700 rounded-full flex items-center justify-center group-hover:animate-spin"></div>
-                  Innovation
-                </CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="text-gray-700 leading-relaxed">
-                  BMW's commitment to cutting-edge technology and automotive innovation aligns with my passion for
-                  pushing boundaries in data science and software development.
-                </p>
-              </CardContent>
-            </Card>
+  <CardHeader>
+    <CardTitle className="flex items-center gap-3 text-blue-700 font-serif text-xl">
+      <div className="w-12 h-12 bg-gradient-to-r from-blue-600 to-blue-700 rounded-full flex items-center justify-center group-hover:animate-spin">
+        <Rocket className="w-6 h-6 text-white" />
+      </div>
+      Innovation
+    </CardTitle>
+  </CardHeader>
+  <CardContent>
+    <p className="text-gray-700 leading-relaxed">
+      BMW has a commitment to pushing the boundaries of what's possible in the automotive industry and consistently follows through. 
+      Engines like the S58 and B58 are true masterpieces of engineering.
+    </p>
+  </CardContent>
+</Card>
             <Card className="p-8 bg-white border-0 shadow-xl hover:shadow-3xl transition-all duration-500 hover:scale-110 hover:-translate-y-4 group">
               <CardHeader>
                 <CardTitle className="flex items-center gap-3 text-red-600 font-serif text-xl">
@@ -248,8 +252,8 @@ export default function BMWInterviewPortfolio() {
               </CardHeader>
               <CardContent>
                 <p className="text-gray-700 leading-relaxed">
-                  The pursuit of excellence in engineering and design resonates with my approach to problem-solving and
-                  my desire to deliver high-quality solutions.
+                  I have learnt first-hand through my time at the hub that it strives for excellence in everything it does—from the smallest tasks to the bigger picture.
+                  
                 </p>
               </CardContent>
             </Card>
@@ -259,13 +263,13 @@ export default function BMWInterviewPortfolio() {
                   <div className="w-12 h-12 bg-gradient-to-r from-blue-600 to-blue-700 rounded-full flex items-center justify-center group-hover:animate-bounce">
                     <Target className="w-6 h-6 text-white" />
                   </div>
-                  Future Vision
+                  Personal Interest
                 </CardTitle>
               </CardHeader>
               <CardContent>
                 <p className="text-gray-700 leading-relaxed">
-                  BMW's vision for the future of mobility, including electric vehicles and autonomous driving, excites
-                  me as a data scientist who can contribute to these transformative technologies.
+                  From my presentation, it’s no surprise that I am a massive fan of the brand. I love this company, and I genuinely want to contribute to its success. More than just working here, I want to be part of its legacy.
+
                 </p>
               </CardContent>
             </Card>
@@ -275,39 +279,87 @@ export default function BMWInterviewPortfolio() {
 
       {/* Projects Section */}
       <section id="projects" className="py-20 px-6 bg-gradient-to-r from-blue-900 via-blue-800 to-blue-900 text-white">
-        <div className="max-w-4xl mx-auto">
+        <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-6xl font-bold mb-6 font-serif text-white">Project Demonstrations</h2>
             <div className="w-32 h-2 bg-gradient-to-r from-red-500 to-red-600 mx-auto rounded-full animate-pulse mb-6"></div>
             <p className="text-xl text-gray-300 font-serif">Watch my coding projects come to life</p>
           </div>
           <div className="space-y-12">
-            {[1, 2, 3].map((index) => (
-              <Card
-                key={index}
-                className="group hover:shadow-3xl transition-all duration-500 border-0 bg-white/10 backdrop-blur-lg hover:scale-105"
-              >
-                <CardHeader>
-                  <CardTitle className="font-serif text-2xl text-white flex items-center gap-3">
-                    <div className="w-10 h-10 bg-gradient-to-r from-blue-600 to-red-600 rounded-full flex items-center justify-center group-hover:animate-spin">
-                      <Code className="w-5 h-5 text-white" />
-                    </div>
-                    Project Demo {index}
-                  </CardTitle>
-                  <CardDescription className="text-gray-300 text-lg">Interactive coding demonstration</CardDescription>
-                </CardHeader>
-                <CardContent className="space-y-4">
-                  <div className="aspect-video bg-gradient-to-br from-blue-900/50 to-red-900/50 rounded-lg flex items-center justify-center group-hover:from-blue-800/50 group-hover:to-red-800/50 transition-all duration-500">
-                    <div className="text-center">
-                      <div className="w-20 h-20 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:animate-pulse">
-                        <Code className="w-10 h-10 text-white" />
-                      </div>
-                      <p className="text-white font-serif text-lg">Video Demo Placeholder</p>
-                    </div>
+            {/* Video Demo 1 */}
+            <Card className="group hover:shadow-3xl transition-all duration-500 border-0 bg-white/10 backdrop-blur-lg hover:scale-105">
+              <CardHeader>
+                <CardTitle className="font-serif text-2xl text-white flex items-center gap-3">
+                  <div className="w-10 h-10 bg-gradient-to-r from-blue-600 to-red-600 rounded-full flex items-center justify-center group-hover:animate-spin">
+                    <Code className="w-5 h-5 text-white" />
                   </div>
-                </CardContent>
-              </Card>
-            ))}
+                  Generative AI Demo
+                </CardTitle>
+                <CardDescription className="text-gray-300 text-lg">Interactive coding demonstration</CardDescription>
+              </CardHeader>
+              <CardContent className="space-y-4">
+                <div className="aspect-video bg-black/20 rounded-lg overflow-hidden">
+                  <video 
+                    className="w-full h-full object-contain"
+                    controls
+                    preload="metadata"
+                  >
+                    <source src="/videos/2025-08-25 18-35-49.mp4" type="video/mp4" />
+                    Your browser does not support the video tag.
+                  </video>
+                </div>
+              </CardContent>
+            </Card>
+
+            {/* Video Demo 2 */}
+            <Card className="group hover:shadow-3xl transition-all duration-500 border-0 bg-white/10 backdrop-blur-lg hover:scale-105">
+              <CardHeader>
+                <CardTitle className="font-serif text-2xl text-white flex items-center gap-3">
+                  <div className="w-10 h-10 bg-gradient-to-r from-blue-600 to-red-600 rounded-full flex items-center justify-center group-hover:animate-spin">
+                    <Code className="w-5 h-5 text-white" />
+                  </div>
+                  GitHub Integration
+                </CardTitle>
+                <CardDescription className="text-gray-300 text-lg">Interactive coding demonstration</CardDescription>
+              </CardHeader>
+              <CardContent className="space-y-4">
+                <div className="aspect-video bg-black/20 rounded-lg overflow-hidden">
+                  <video 
+                    className="w-full h-full object-contain"
+                    controls
+                    preload="metadata"
+                  >
+                    <source src="/videos/2025-08-25 18-52-29.mp4" type="video/mp4" />
+                    Your browser does not support the video tag.
+                  </video>
+                </div>
+              </CardContent>
+            </Card>
+
+            {/* Video Demo 3 */}
+            <Card className="group hover:shadow-3xl transition-all duration-500 border-0 bg-white/10 backdrop-blur-lg hover:scale-105">
+              <CardHeader>
+                <CardTitle className="font-serif text-2xl text-white flex items-center gap-3">
+                  <div className="w-10 h-10 bg-gradient-to-r from-blue-600 to-red-600 rounded-full flex items-center justify-center group-hover:animate-spin">
+                    <Code className="w-5 h-5 text-white" />
+                  </div>
+                  Jira Inetgration
+                </CardTitle>
+                <CardDescription className="text-gray-300 text-lg">Interactive coding demonstration</CardDescription>
+              </CardHeader>
+              <CardContent className="space-y-4">
+                <div className="aspect-video bg-black/20 rounded-lg overflow-hidden">
+                  <video 
+                    className="w-full h-full object-contain"
+                    controls
+                    preload="metadata"
+                  >
+                    <source src="/videos/2025-08-25 18-45-07.mp4" type="video/mp4" />
+                    Your browser does not support the video tag.
+                  </video>
+                </div>
+              </CardContent>
+            </Card>
           </div>
         </div>
       </section>
